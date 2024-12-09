@@ -41,5 +41,35 @@ public class Tabla {
 
     }
 
+    public void Tábla(){
+
+    }
+
+    public boolean ÜresOszlop(int hanyadik){
+        boolean ures = false;
+        int i = 0;
+        while (T[i][hanyadik] == 'K'){
+            i++;
+            ures = true;
+        }
+
+
+        return ures;
+    }
+
+    public boolean ÜresSor(int hanyadik){
+       boolean ures = false;
+        for (int i = 0; i < T[hanyadik].length; i++) {
+            if (T[hanyadik][i] == 'K'){
+                ures = true;
+            }else{
+                ures = false;
+            }
+        }
+        return ures;
+    }
+
+
+
 
 }
