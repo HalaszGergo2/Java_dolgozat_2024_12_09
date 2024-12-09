@@ -1,6 +1,9 @@
 package hu.szamalk;
 
+import java.util.Random;
+
 public class Tabla {
+
     private char[][] T;
     private char ÜresCella;
 
@@ -15,6 +18,7 @@ public class Tabla {
     }
 
     public void Megjelenít(){
+        Elhelyez(2);
         for (int i = 0; i < T.length; i++) {
             for (int j = 0; j < T[i].length; j++) {
                     System.out.print(T[i][j]);
@@ -24,6 +28,18 @@ public class Tabla {
 
     }
 
+    public void Elhelyez(int n){
+        Random rnd = new Random();
+        int randomHely = rnd.nextInt(0, 8);
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (T[randomHely][randomHely] == '#') {
+                    T[randomHely][randomHely] = 'K';
+                }
+            }
+        }
+
+    }
 
 
 }
