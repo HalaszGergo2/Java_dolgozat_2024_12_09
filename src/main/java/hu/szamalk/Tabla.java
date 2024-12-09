@@ -52,8 +52,6 @@ public class Tabla {
             i++;
             ures = true;
         }
-
-
         return ures;
     }
 

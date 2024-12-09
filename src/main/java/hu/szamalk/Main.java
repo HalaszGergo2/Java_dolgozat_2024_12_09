@@ -6,7 +6,5 @@ public class Main {
         tabla.Megjelenít();
         System.out.println("Található üres oszlop?: " + tabla.ÜresOszlop(2));
         System.out.println("Található üres sor?: " + tabla.ÜresSor(2));
-
-
     }
 }
